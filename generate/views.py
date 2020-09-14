@@ -15,7 +15,7 @@ def password_generate(request):
         characters.extend(list('!@#$%^&*-+{(])}<?>['))
 
     password = ''
-    length = int(request.GET.get('length'))
+    length = int(request.GET.get('length',8))
 
     i=0
     while i < length:
