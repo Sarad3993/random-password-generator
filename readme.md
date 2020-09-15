@@ -1,6 +1,7 @@
 # **Random Password Generator**
 
 ### *Simple password generator app created using django*
+#### For demo of this project visit **[here](https://djpasswordgenerator.herokuapp.com)**
 
 ## **Project Requirements:**
 
@@ -30,7 +31,7 @@ python manage.py runserver
 <br>
 
 <p align="center">
-<img src="screenshots/image 1.png" width="500"/>
+<img src="screenshots/image 1.png" width="550"/>
 
 <br>
 
