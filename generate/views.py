@@ -14,14 +14,9 @@ def password_generate(request):
     if request.GET.get('special'):
         characters.extend(list('!@#$%^&*-+{(])}<?>[,.:;\`/'))
 
-    password = ''
     length = int(request.GET.get('length',8))
 
-    i=0
-    while i < length:
-        password += random.choice(characters)
-        i += 1 
-
+    password = ''.join(random.choice(characters) for _ in range(length))
     context_var = {'password':password,'length':length}
     return render(request,'password_generate.html',context_var)
 
